@@ -11,7 +11,13 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
+    let article
+
+    if (!params.slug) {
+      article = await $content('blog-posts', 'index').fetch()
+    } else {
+      article = await $content('blog-posts', params.slug).fetch()
+    }
 
     return { article }
   },

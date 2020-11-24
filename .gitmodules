@@ -1,0 +1,3 @@
+[submodule "content/blog-posts"]
+	path = content/blog-posts
+	url = https://github.com/dakotaruelle/blog-posts

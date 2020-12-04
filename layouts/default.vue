@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-app-bar fixed dense hide-on-scroll app>
-      <NuxtLink to="/"><v-btn depressed class="mr-2">Home</v-btn></NuxtLink>
       <NuxtLink to="/blog"><v-btn depressed>Blog</v-btn></NuxtLink>
       <v-spacer />
       <v-btn icon @click.stop="toggleDarkTheme">

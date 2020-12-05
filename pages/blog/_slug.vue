@@ -14,9 +14,9 @@ export default {
     let article
 
     if (!params.slug) {
-      article = await $content('blog-posts', 'index').fetch()
+      article = await $content('posts', 'index').fetch()
     } else {
-      article = await $content('blog-posts', params.slug).fetch()
+      article = await $content('posts', params.slug).fetch()
     }
 
     return { article }

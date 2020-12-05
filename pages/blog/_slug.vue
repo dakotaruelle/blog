@@ -2,6 +2,8 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <article>
+        <h1>{{ article.title }}</h1>
+        <p>Last updated: {{ formatDate(article.updatedAt) }}</p>
         <nuxt-content :document="article" />
       </article>
     </v-col>
@@ -20,6 +22,13 @@ export default {
     }
 
     return { article }
+  },
+
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    },
   },
 }
 </script>

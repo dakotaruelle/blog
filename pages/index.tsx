@@ -19,8 +19,6 @@ const Home: NextPage = () => {
           My name is Dakota. I love to build cool things.
         </p>
       </main>
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Paper } from '@mui/material';
+import Paper from '@mui/material/Paper';
 import React from 'react';
 
 export default function BasicCard() {

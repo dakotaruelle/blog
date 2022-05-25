@@ -1,17 +1,16 @@
-import {
-  AppBar,
-  Container,
-  Toolbar,
-  Typography,
-  Box,
-  IconButton,
-  Menu,
-  MenuItem,
-  Button,
-  Tooltip,
-  Avatar,
-} from '@mui/material';
-import { Cottage as CottageIcon, Menu as MenuIcon } from '@mui/icons-material';
+import AppBar from '@mui/material/AppBar';
+import Container from '@mui/material/Container';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
+import Avatar from '@mui/material/Avatar';
+import CottageIcon from '@mui/icons-material/Cottage';
+import MenuIcon from '@mui/icons-material/Menu';
 import { useState, MouseEvent } from 'react';
 
 const pages = ['Code Examples'];

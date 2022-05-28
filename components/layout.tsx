@@ -47,7 +47,7 @@ export function Layout(props: Props) {
       </HideOnScroll>
       <Toolbar />
       <div className="page-container">
-        <Container>{props.children}</Container>
+        <Container className="full-height">{props.children}</Container>
       </div>
     </React.Fragment>
   );

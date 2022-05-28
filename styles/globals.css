@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#stackblitz-embed {
+  height: 50vh;
+  width: 100%;
+}
+
+.stackblitz-container {
+}

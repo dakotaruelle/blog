@@ -39,14 +39,16 @@ export function Layout(props: Props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar position="fixed">
           <Toolbar>
             <CottageIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           </Toolbar>
         </AppBar>
       </HideOnScroll>
       <Toolbar />
-      <Container>{props.children}</Container>
+      <div className="page-container">
+        <Container>{props.children}</Container>
+      </div>
     </React.Fragment>
   );
 }
